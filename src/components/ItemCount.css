@@ -1,0 +1,25 @@
+.contenedor-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.botones {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 150px;
+}
+.botones button {
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-size: 17px;
+    width: 38px;
+    height: 38px;
+    transition: all 0.3s ease-in-out;
+}
+
+p{
+    color: white;
+}
