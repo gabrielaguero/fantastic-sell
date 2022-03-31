@@ -1,7 +1,7 @@
 import react, {useState} from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "./ItemCount";
-import { CartContext } from "./Context/CartContext";
+import { CartContext } from "./CartContext";
 
 const ItemDetail = ({producto}) => {
     const [monto, setMonto] = useState(0);
