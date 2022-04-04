@@ -8,15 +8,16 @@ export const CustomContext = () =>{
         setProductos([...productos, {item:newItem, quantity:quantity}]);
     }
     const removeItem = (itemId) =>{
-        itemId > 0 && setProductos(productos - 1);
+        let result = productos.filter((e) => e.itemId !== itemId);
+        setProductos(result);
     }
     const clear = () => {
-        productos.lenght = 0;
+        setProductos([]);
     } 
-    clear();
+    
 
     const isInCart = (id) =>{
-        return id === undefined ? undefined : addItem !== undefined
+        return productos.some((e) => e.id === id );
     }
 
 
